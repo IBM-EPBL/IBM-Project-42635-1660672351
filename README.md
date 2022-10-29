@@ -1,12 +1,14 @@
 # IBM-Project-42635-1660672351
 Web Phishing Detection
 
-hello everyone...!!
+Team ID : PNT2022TMID49605
 
-We are developing a project on web phishing detection using ML Algorithm...
+Team Size : 4
 
-Team Leader: Anand.k
+Team Leader : Anand.k
 
-Members: 1) Guru Moorthy
-         2) Mohamed Musthaq
-         3) Vaishali
+TEAM MEMBER 1 : Guru Moorthy.B
+
+TEAM MEMBER 2 : Mohamed Musthaq I.B
+
+TEAM MEMBER 3 : Vaishali.A
