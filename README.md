@@ -3,7 +3,7 @@ Web Phishing Detection
 
 hello everyone...!!
 
-We developing a project on web phishing detection using ML Algorithm...
+We are developing a project on web phishing detection using ML Algorithm...
 
 Team Leader: Anand.k
 
