@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>web phishing detection</title>
+        <link rel="stylesheet" href="/static/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <meta name="description" content="This website is develop for identify the safety of url.">
+        <meta name="keywords" content="phishing url,phishing,cyber security,machine learning,classifier,python">
+        <meta name="author" content="ANAND">
+        <!-- <link rel="stylesheet" href=""> -->
+    </head>
+    <body>
+        <header class="web">
+            <nav class="navbar">
+                <div class="navbar__brand">
+                    <img src="/static/logo.jpeg" alt="logo" class="brand__logo">
+                    <a href="#">
+                </div>
+                <div class="navbar__nav__items">
+                    <ul>
+                        <li class="nav__items__home">
+                            <a href="#" class="nav__items__button">Home</a>
+                        </li>
+                        <li class="nav__items__menu">
+                            <a href="#About" class="nav__items__button">About</a>
+                        </li>
+                        <li class="nav__items__contact">
+                            <a href="#contact" class="nav__items__button">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+        <main class="container">
+            <div class="image__container" >
+                <div class="image__container__cool">
+                    <img src="/static/image2.jpeg" alt="phisher" class="image__image1__container__cool">
+                </div>
+                <div class="text__container">
+                    <div class="text__container__intro">
+                        <style>
+                            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+                            </style>
+                        <span class="text__intro__welcome">real-time phishing and fraudulent website detection</span>
+                    </div>
+                </div>
+                <div class="text__container__des">
+
+                    <h1 class="text__des__quote">
+                        Phishing  attack  is  a  simplest  way  to  obtain  sensitive information  from innocent  users. Aim  of the  phishers  is to acquire critical information like username, password and bank account details.
+                        <br> This  website  deals with  machine learning technology for detection of phishing URLs by extracting and analyzing various features of legitimate and phishing URLs
+        
+                    </h1>
+                </div>
+            </div>
+            <div class="space__container"></div>
+            <div class="section__container scanner-section">
+                <div class="section__container__hello">
+                    <div class="bad">
+                        <div class="school">
+                            <h1 class="text21">Web Phishing detection website </h1>
+                            
+                            <div class="subsection">
+                                <div class="type-button">
+                                    <div class="stbutton">Url Scan</div>
+                                    <!-- <div class="stbutton type-button">IP/DOMAIN </div> -->
+                                </div>
+                                <div class="searchcontainer">
+                                    <div class="search-bar">
+                                        <form action="/y_predict" method="POST" class="scannner">
+                                        <input class="search-text-field" type='text'  id="url" placeholder="Enter a URL : https://example.com" name="url" value="{{ url_path }}">
+                                    
+                                        <input class="search-bar-button" type="submit" value='predict'>
+                                        </form>
+                                        <b>{{prediction_text}}</b>
+                                        <p>{{url}}</p>
+                                        
+                                        
+                                    </div>
+                            
+                                      
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="space__container"></div>
+            <div class="category" id="About">
+                <div class="text__container">
+                    <div class="text__container__intro">
+                        <h1 class="text21"> Pricing </h1>
+                    </div>
+                </div>
+                    
+                <div class="first__category">
+                    <div class="descr__category">
+                        <h2>Standard</h2>
+                        <p><a class="recipe__btn">FREE</a></p>
+                        <p>Bulk scan functionality<br>
+                            Private scan<br>
+                        </p>
+                        <a class="catbutton" href="#">Free Access</a>
+                    </div>
+                </div>
+                <div class="first__category">
+                    <div class="descr__category">
+                        <h2>Premium</h2>
+                        <p><a class="recipe__btn">$20/Month</a></p>
+                        <p> Multi-user environments<br>
+                            Dedicated support<br>
+                        </p>
+                        <a class="catbutton" href="#">Coming Soon</a>
+                    </div>
+                </div>
+                <div class="first__category">
+                   
+                    <div class="descr__category">
+                        <h2>Ultra premium</h2>
+                        <p><a class="recipe__btn">$100/Month</a></p>
+                        <p>Custom SLAs<br>
+                            Dedicated account management support<br></p>
+                        <a class="catbutton" href="#">Coming Soon</a>
+                    </div>
+                </div>
+            
+        </main>
+        <footer class="footer" id="contact">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <div class="footercontainer">
+                <div class="row">
+                    <div class="footer__col">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Security Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Follow Us</h4>
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/phishingwebsite/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/phishingwebsite"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=" https://twitter.com/phishingwebsite"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/phishingwebsite/"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__down">
+                <span>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2022 © Web Phishing Detection. All rights by Deserved</span>
+            </div>
+        </footer>
+    </body>
+</html>
